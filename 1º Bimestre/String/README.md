@@ -1,1 +1,2 @@
 Exercicios com String
+teste
