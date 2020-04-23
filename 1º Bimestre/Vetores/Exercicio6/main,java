@@ -1,0 +1,30 @@
+public class Main {
+  public static int[][] matrizResultanteMetodo(int a[][], int b[][]){
+    int matrizResultante[][] = new int[2][];
+    for(int i=0; i < 2; i++){
+        for(int j=0; j < 2; j++){
+          int somatoria = 0;
+          for(int k = 0; j < 2; k++){
+            int produto = a[i][k] * b[k][j];
+            somatoria += produto;
+          }
+        matrizResultante[i][j] = somatoria;
+        }
+    }
+    return matrizResultante;
+  }
+  public static void apresentarResultado(int[][] matriz) {
+      System.out.println("O produto das matrizes são: ");
+      for(int[] linha : matriz) {
+          for (int coluna : linha) {
+              System.out.print(coluna + "  ");
+          }
+    }
+  }
+  public static void main(String[] args) {
+    int matriz1[][] = {{1, 2}, {3, 4}};
+    int matriz2[][] = {{-1, 3}, {4, 2}}; 
+    int matrizResultante[][] = matrizResultanteMetodo(matriz1, matriz2);
+    apresentarResultado(matrizResultante);
+  }
+}
