@@ -10,17 +10,20 @@ public class Soma {
 			for(int i = 0; i < valorInicial+1; i++) {
 				if ( i == 0) {
 					valor = i;
-					System.out.println(i);
-				}
+					}
 				else {
+					System.out.println("Valor atual: " + valor);
 					valor += i;
-					System.out.println(valor);
+					System.out.println("Numero Seguinte: " + valor);
 				}}
 			if (j < 1) {
+				System.out.println("");
 				System.out.println("Reiniciando Sequencia");
 				valor = 0;
+				System.out.println("");
 				}
 			else {
+				System.out.println("");
 				System.out.println("Sequencia terminada");
 			}
 		}

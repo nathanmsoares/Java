@@ -13,9 +13,11 @@ public class SomaAoQuadrado extends Soma{
 						System.out.println(valor);
 					}
 					else {
+						System.out.println("Valor atual: " + valor);
 						double valorAoQuadrado = Math.pow(i,2);
+						System.out.println("Valor ao quadrado: "+ valorAoQuadrado);
 						valor += valorAoQuadrado;
-						System.out.println(valor);
+						System.out.println("Proximo valor "+ valor);
 				}}
 			if (j < 1) {
 				System.out.println("resetando contagem");
